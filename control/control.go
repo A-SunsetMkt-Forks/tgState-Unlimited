@@ -262,7 +262,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	<body>
 		<h1>上传图片到 Telegram</h1>
 		<label for="uploadFile" id="uploadFileLabel" class="custom-file-label">选择文件</label>
-		<input type="file" name="image" id="uploadFile" accept=".jpg, .jpeg, .png" class="custom-file-input">
+		<input type="file" name="image" id="uploadFile" accept="*.*" class="custom-file-input">
 		<button id="uploadButton">上传</button>
 		<div id="loading">上传中...</div>
 		<div id="response" class="ui-widget">
