@@ -39,15 +39,9 @@ func UploadImageAPI(w http.ResponseWriter, r *http.Request) {
 		}
 
 		// 检查文件类型
-		allowedExts := true
+		allowedExts := []string{".jpg", ".jpeg", ".png"}
 		ext := filepath.Ext(header.Filename)
-		valid := false
-		for _, allowedExt := range allowedExts {
-			if ext == allowedExt {
-				valid = true
-				break
-			}
-		}
+		valid := true
 
 		if !valid {
 			errJsonMsg("Invalid file type. Only .jpg, .jpeg, and .png are allowed.", w)
