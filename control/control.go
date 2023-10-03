@@ -16,7 +16,7 @@ func UploadImageAPI(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	if r.Method == http.MethodPost {
 		// 解析上传的文件
-		err := r.ParseMultipartForm(5 * 1024 * 1024) // 限制上传文件大小为 5MB
+		err := r.ParseMultipartForm(2048 * 1024 * 1024) // 限制上传文件大小为 2GB
 		if err != nil {
 			errJsonMsg("Unable to parse form", w)
 			// http.Error(w, "Unable to parse form", http.StatusBadRequest)
@@ -34,13 +34,13 @@ func UploadImageAPI(w http.ResponseWriter, r *http.Request) {
 
 		// 检查文件大小
 		fileSize := r.ContentLength
-		if fileSize > 20*1024*1024 {
-			errJsonMsg("File size exceeds 20MB limit", w)
+		if fileSize > 2048*1024*1024 {
+			errJsonMsg("File size exceeds 2048MB limit", w)
 			return
 		}
 
 		// 检查文件类型
-		allowedExts := []string{".jpg", ".jpeg", ".png"}
+		allowedExts := true
 		ext := filepath.Ext(header.Filename)
 		valid := false
 		for _, allowedExt := range allowedExts {
