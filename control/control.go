@@ -257,7 +257,16 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		</style>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
-	<body>
+ 
+	<body background="https://cdn.xcnya.cn/Basic/part/background.webp">  
+	<link rel="stylesheet" href="https://cdn.xcnya.cn/Basic/assets/fonts/lxgw-wenkai-screen-webfont/style.css" />  
+
+	<style>
+        	body {
+      		/* Screen version */
+      		font-family: "LXGW WenKai Screen", sans-serif;
+    		}
+    		</style> 
 		<h1>上传文件到 Telegram 并获取直链</h1>
 		<label for="uploadFile" id="uploadFileLabel" class="custom-file-label">选择文件</label>
 		<input type="file" name="image" id="uploadFile" accept="*.*" class="custom-file-input">
