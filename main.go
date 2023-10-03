@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"os"
 
-	"csz.net/tgstate/conf"
-	"csz.net/tgstate/control"
+	"conf"
+	"control"
 )
 
 var webPort string
