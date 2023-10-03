@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"os"
 
-	"conf"
-	"control"
+	"tgState-Unlimited/conf"
+	"tgState-Unlimited/control"
 )
 
 var webPort string
