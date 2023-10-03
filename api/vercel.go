@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"csz.net/tgstate/conf"
-	"csz.net/tgstate/control"
+	"tgState-Unlimited/conf"
+	"tgState-Unlimited/control"
 )
 
 func Vercel(w http.ResponseWriter, r *http.Request) {
