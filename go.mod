@@ -1,4 +1,4 @@
-module csz.net/tgstate
+module tgState-Unlimited
 
 go 1.20
 
