@@ -368,6 +368,11 @@ func Index(w http.ResponseWriter, r *http.Request) {
 				});
 	}
 		</script>
+
+    		<p>原版： https://github.com/csznet/tgState</p>
+		<p>修改版：https://github.com/GenshinMinecraft/tgState-Unlimited</p>
+  		<p>感谢开源工作者付出</p>
+    
 		<a href="https://www.csz.net/"><img src="https://www.csz.net/csznet.png"></a>
 	</body>
 	</html>
