@@ -164,9 +164,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	htmlForm := `<!DOCTYPE html>
 	<html>
 	<head>
-		<title>Telegram图床</title>
-		<meta name="keywords" content="telegram图床,tg图床,免费图床,永久图床,图片外链,免费图片外链,纸飞机图床,电报图床" />
-		<meta name="description" content="telegram图床,tg图床,免费图床,永久图床,图片外链,免费图片外链,纸飞机图床,电报图床" />
+		<title>将文件保存至Telegram</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta charset="UTF-8">
 		<style>
@@ -260,7 +258,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
 	<body>
-		<h1>上传图片到 Telegram</h1>
+		<h1>上传文件到 Telegram 并获取直链</h1>
 		<label for="uploadFile" id="uploadFileLabel" class="custom-file-label">选择文件</label>
 		<input type="file" name="image" id="uploadFile" accept="*.*" class="custom-file-input">
 		<button id="uploadButton">上传</button>
@@ -298,7 +296,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 			if(file){
 				uploadImg(file)
 			}else{
-				alert('请选择一个图片文件');
+				alert('请选择一个文件');
 			}
 		});
 	});
@@ -322,7 +320,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 					success: function (response) {
 						if (response.code === 1) {
 							var imgUrl = baseUrl + response.message;
-							var newItem = $('<div class="response-item response-success">上传成功，图片外链：<a target="_blank" href="' + imgUrl + '">' + imgUrl + '</a>' +
+							var newItem = $('<div class="response-item response-success">上传成功，文件外链：<a target="_blank" href="' + imgUrl + '">' + imgUrl + '</a>' +
 								'<div class="copy-links">' +
 								'<span class="copy-code" data-clipboard-text="&lt;img src=&quot;' + imgUrl + '&quot; alt=&quot;Your Alt Text&quot;&gt;">HTML</span>' +
 								'<span class="copy-code" data-clipboard-text="![Alt Text](' + imgUrl + ')">Markdown</span>' +
