@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"path/filepath"
 	"strings"
-	"conf"
-	"utils"
+	"tgState-Unlimited/conf"
+	"tgState-Unlimited/utils"
 )
 
 // 上传文件api
