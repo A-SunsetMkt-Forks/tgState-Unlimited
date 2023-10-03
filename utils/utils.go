@@ -5,7 +5,7 @@ import (
 	"log"
 	"strings"
 
-	"csz.net/tgstate/conf"
+	"tgState-Unlimited/conf"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
