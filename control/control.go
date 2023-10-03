@@ -39,8 +39,6 @@ func UploadImageAPI(w http.ResponseWriter, r *http.Request) {
 		}
 
 		// 检查文件类型
-		allowedExts := []string{".jpg", ".jpeg", ".png"}
-		ext := filepath.Ext(header.Filename)
 		valid := true
 
 		if !valid {
