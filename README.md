@@ -8,6 +8,8 @@
 
 原版README: <https://github.com/csznet/tgState/blob/main/README.md>
 
-此版本更改了上传的大小限制，并不设置后缀名限制。
+美化来自 https://blog.xcnya.cn/
+
+此版本更改了上传的大小限制，并不设置后缀名限制，还进行了css字体与背景美化，From <https://blog.xcnya.cn/>
 
 可以当正常网盘使用
