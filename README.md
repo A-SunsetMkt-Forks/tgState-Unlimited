@@ -1,6 +1,6 @@
 # tgstate
 
-使用方法等均与原版相同，正在测试Vercel
+使用方法等均与原版相同，正在测试[Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGenshinMinecraft%2FtgState-Unlimited&env=token&env=channel&project-name=tgState-Unlimited&repository-name=tgState-Unlimited)
 
 原版README: <https://github.com/csznet/tgState/blob/main/README.md>
 
