@@ -6,9 +6,8 @@ import (
 	"net/http"
 	"path/filepath"
 	"strings"
-
-	"csz.net/tgstate/conf"
-	"csz.net/tgstate/utils"
+	"conf"
+	"utils"
 )
 
 // 上传文件api
