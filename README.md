@@ -1,5 +1,10 @@
 # tgstate
 
+## DEMO
+<https://tgstate.miaospeed.link/>
+
+采用了CloudFlare Tunnel，速度不太理想，仅供体验！
+
 原版README: <https://github.com/csznet/tgState/blob/main/README.md>
 
 美化来自 https://blog.xcnya.cn/
